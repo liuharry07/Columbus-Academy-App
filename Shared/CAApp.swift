@@ -4,9 +4,10 @@
 //
 //  Created by Jim Phieffer on 8/10/22.
 //
+//yuh lets code this jawnson
 
 import SwiftUI
-
+//herro
 @main
 struct CAApp: App {
     @StateObject var loginViewModel = LoginViewModel()
