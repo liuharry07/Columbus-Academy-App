@@ -6,6 +6,11 @@
 //
 //yuh lets code this jawnson
 
+//can you see this?
+
+//oh hi harry!!!!!!!!!
+//happy birthday!!!!!!!!!!!!!
+//woot woot!!!!!!!!!
 import SwiftUI
 //herro
 @main
