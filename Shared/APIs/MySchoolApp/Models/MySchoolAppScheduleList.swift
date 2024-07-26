@@ -17,6 +17,7 @@ struct MySchoolAppScheduleListElement: Codable {
     let buildingName: String
     let myDayStartTime: String
     let myDayEndTime: String
+    let date: Date
 }
 
 typealias MySchoolAppScheduleList = [MySchoolAppScheduleListElement]

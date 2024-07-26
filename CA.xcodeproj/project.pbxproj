@@ -124,6 +124,10 @@
 		37FB9B5E28BCF9EE00369684 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB9B5928BCF79E00369684 /* ScheduleWidget.swift */; };
 		37FB9B6128BD35D800369684 /* ScheduleWidgetLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB9B5F28BD35D300369684 /* ScheduleWidgetLargeView.swift */; };
 		37FB9B6F28BE8B1100369684 /* MySchoolAppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB9B6A28BE3FBB00369684 /* MySchoolAppDataManager.swift */; };
+		FEA766D12BB49D85009747A8 /* TodayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA766D02BB49D84009747A8 /* TodayScheduleView.swift */; };
+		FEA766D22BB49D85009747A8 /* TodayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA766D02BB49D84009747A8 /* TodayScheduleView.swift */; };
+		FEA766D72BB4A3D9009747A8 /* TodayNextClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA766D62BB4A3D8009747A8 /* TodayNextClassesView.swift */; };
+		FEA766D82BB4A3D9009747A8 /* TodayNextClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA766D62BB4A3D8009747A8 /* TodayNextClassesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +222,8 @@
 		37FB9B5F28BD35D300369684 /* ScheduleWidgetLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidgetLargeView.swift; sourceTree = "<group>"; };
 		37FB9B6328BDC6E900369684 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		37FB9B6A28BE3FBB00369684 /* MySchoolAppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchoolAppDataManager.swift; sourceTree = "<group>"; };
+		FEA766D02BB49D84009747A8 /* TodayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScheduleView.swift; sourceTree = "<group>"; };
+		FEA766D62BB4A3D8009747A8 /* TodayNextClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayNextClassesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +417,8 @@
 			isa = PBXGroup;
 			children = (
 				37AA918228A767C5001E4852 /* TodayHeaderView.swift */,
+				FEA766D02BB49D84009747A8 /* TodayScheduleView.swift */,
+				FEA766D62BB4A3D8009747A8 /* TodayNextClassesView.swift */,
 				377C5B0C28AB72B700B94052 /* TodayView.swift */,
 			);
 			path = Today;
@@ -692,6 +700,7 @@
 				37F9D5B228B6617D00DAA95E /* FeedView.swift in Sources */,
 				37A5A65028A4CDFA0053DCE2 /* MySchoolAppAPI.swift in Sources */,
 				37A5A65D28A4E47C0053DCE2 /* MySchoolAppContext.swift in Sources */,
+				FEA766D12BB49D85009747A8 /* TodayScheduleView.swift in Sources */,
 				375AA39D28BE95D3002C71DD /* MySchoolAppDataManager.swift in Sources */,
 				37EAF4AD28CED50300AC94E6 /* Task.swift in Sources */,
 				37A5A65A28A4E40B0053DCE2 /* MySchoolAppSchoolContext.swift in Sources */,
@@ -713,6 +722,7 @@
 				37EAF49528C8DD5C00AC94E6 /* DropdownToast.swift in Sources */,
 				372F7BB928AAD71700D01A84 /* Color.swift in Sources */,
 				37F9D5B028B6617D00DAA95E /* SettingsView.swift in Sources */,
+				FEA766D72BB4A3D9009747A8 /* TodayNextClassesView.swift in Sources */,
 				37F9D5B928B6617D00DAA95E /* CalendarView.swift in Sources */,
 				37D5C52628AD8F76001A6785 /* TwitterUser.swift in Sources */,
 				37F9D53628B41B8E00DAA95E /* MySchoolAppScheduleList.swift in Sources */,
@@ -762,6 +772,8 @@
 				37FB9B6F28BE8B1100369684 /* MySchoolAppDataManager.swift in Sources */,
 				372F7BB728AAD29700D01A84 /* URLRequest.swift in Sources */,
 				372F7BA728A8D17700D01A84 /* MySchoolAppCalendarList.swift in Sources */,
+				FEA766D22BB49D85009747A8 /* TodayScheduleView.swift in Sources */,
+				FEA766D82BB4A3D9009747A8 /* TodayNextClassesView.swift in Sources */,
 				37A5A62C28A3982E0053DCE2 /* CAApp.swift in Sources */,
 				372F7B9E28A8C32400D01A84 /* HTTPCookie.swift in Sources */,
 				37A5A66B28A5CB280053DCE2 /* SageDiningVenueInformation.swift in Sources */,
@@ -943,7 +955,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				DEVELOPMENT_TEAM = 655FC23Y9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CA--iOS--Info.plist";
@@ -960,7 +972,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.CA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryliu.CA;
 				PRODUCT_NAME = CA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -980,7 +992,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				DEVELOPMENT_TEAM = 655FC23Y9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CA--iOS--Info.plist";
@@ -997,7 +1009,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.CA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryliu.CA;
 				PRODUCT_NAME = CA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1077,7 +1089,7 @@
 				CODE_SIGN_ENTITLEMENTS = CAWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				DEVELOPMENT_TEAM = 655FC23Y9F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CAWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CAWidgets;
@@ -1089,7 +1101,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.CA.CAWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryliu.CA.CAWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1108,7 +1120,7 @@
 				CODE_SIGN_ENTITLEMENTS = CAWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				DEVELOPMENT_TEAM = 655FC23Y9F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CAWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CAWidgets;
@@ -1120,7 +1132,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.CA.CAWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryliu.CA.CAWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

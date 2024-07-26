@@ -9,22 +9,29 @@ import Foundation
 import SwiftUI
 import Introspect
 
+/*
+#Preview {
+    TodayView();
+}
+ */
+
 struct TodayView: View {
     @StateObject var todayViewModel = TodayViewModel()
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 LazyVStack {
-                    TodayHeaderView(letterDay: $todayViewModel.letterDay)
-                    ScheduleView(schedule: $todayViewModel.schedule)
+                    HStack {
+                        TodayHeaderView(letterDay: $todayViewModel.letterDay)
+                        TodayScheduleView(schedule: $todayViewModel.schedule)
+                    }
                     LunchPreviewView(menuItems: $todayViewModel.menuItems, selectedDate: Binding.constant(Date().start()))
                     CalendarDetailView(events: $todayViewModel.events, selectedDate: Binding.constant(Date().start()))
                 }.navigationBarTitleDisplayMode(.inline)
             }.introspectScrollView { scrollView in
                 scrollView.refreshControl = todayViewModel.refreshControl
             }
-        }.task {
+        .task {
             await todayViewModel.refreshCalendars(from: Date().startOfMonth(), to: Date().startOfNextMonth())
             await todayViewModel.refreshEvents(from: Date().start(), to: Date().start() + 86400)
             await todayViewModel.refreshLetterDay()
@@ -147,6 +154,7 @@ struct TodayView: View {
         do {
             guard let calendars = try? calendars?.get() else { return }
             for calendar in calendars {
+                /*
                 for filter in calendar.filters ?? [] {
                     if filter.filterName == "Master Calendar" {
                         let letterDays = try await MySchoolAppAPI.shared.getEvents(from: Date(), to: Date().addingTimeInterval(86400), for: [filter.calendarId], refresh: true, nocache: true)
@@ -155,6 +163,14 @@ struct TodayView: View {
                         }
                         return
                     }
+                }
+                 */
+                if calendar.calendar == "Master Calendar" {
+                    let letterDays = try await MySchoolAppAPI.shared.getEvents(from: Date(), to: Date().addingTimeInterval(86400), for: [calendar.calendarId], refresh: true, nocache: true)
+                    if let letterDay = letterDays.first(where: { $0.title.range(of: "^[A-F] Day$", options: .regularExpression) != nil }) {
+                        self.letterDay = letterDay.title
+                    }
+                    return
                 }
             }
         } catch {}

@@ -28,19 +28,8 @@ struct TodayHeaderView: View {
     let formatter = DateFormatter("EEEE, MMMM d")
 
     var body: some View {
-        HStack {
-            if let quickpin = quickpin, quickpin.count == 4, Int(quickpin) != nil {
-                generateQRCode(quickpin)
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(10)
-                    .padding(5)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 10).stroke(Color.accentColor, lineWidth: 5)
-                            .padding(5)
-                    }
-                    .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.width * 0.4)
-            }
+        //hstack
+        VStack(alignment: .leading) {
             VStack(alignment: .leading) {
                 Text(letterDay ?? "...")
                     .font(.system(size: 60))
@@ -49,8 +38,23 @@ struct TodayHeaderView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 Spacer()
+            }//.padding(10)
+            Spacer()
+            if let quickpin = quickpin, quickpin.count == 4, Int(quickpin) != nil {
+                generateQRCode(quickpin)
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(10)
+                    .padding(5)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 10).stroke(Color.accentColor, lineWidth: 5)
+                            .padding(0)
+                        //5
+                    }
+                //0.4
+                    .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.width * 0.2)
             }
             Spacer()
-        }.padding(10)
+        }.padding(30)
     }
 }

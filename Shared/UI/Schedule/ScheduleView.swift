@@ -35,10 +35,23 @@ struct ScheduleView: View {
                 LazyVStack {
                     if dropped {
                         ForEach(schedule, id: \.startTime) { item in
+                            let currentTime = Date()
+                            let date = item.date
+                            let calendar = Calendar.current
+                            let startTime = calendar.date(byAdding: calendar.dateComponents([.hour, .minute], from: formatter.date(from: item.myDayStartTime)!), to: date)
+                            let endTime = calendar.date(byAdding: calendar.dateComponents([.hour, .minute], from: formatter.date(from: item.myDayEndTime)!), to: date)
                             HStack {
                                 VStack(alignment: .leading, spacing: 10) {
-                                    Text(item.courseTitle)
-                                        .fontWeight(.bold)
+                                    if(startTime! < currentTime && currentTime < endTime!) {
+                                        Text(item.courseTitle)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.blue)
+                                    }
+                                    else {
+                                        Text(item.courseTitle)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.black)
+                                    }
                                     Text("\(item.block.count == 0 ? "No Block" : item.block) - \(item.roomNumber.count == 0 ? "No Room" : item.roomNumber)")
                                         .foregroundColor(.secondary)
                                 }

@@ -71,7 +71,8 @@ actor MySchoolAppDataManager {
                             roomNumber: scheduleListElementEntity.roomNumber ?? "",
                             buildingName: scheduleListElementEntity.buildingName ?? "",
                             myDayStartTime: scheduleListElementEntity.myDayStartTime ?? "",
-                            myDayEndTime: scheduleListElementEntity.myDayEndTime ?? ""
+                            myDayEndTime: scheduleListElementEntity.myDayEndTime ?? "",
+                            date: date
                         )
                     )
                 }
