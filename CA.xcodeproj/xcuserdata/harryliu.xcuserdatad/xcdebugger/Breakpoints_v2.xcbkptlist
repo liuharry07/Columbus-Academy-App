@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "84901E4F-7D98-4C52-B8E8-A3643A092C71"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0027F306-4112-4DF0-9A9D-3DE0165DAEB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/UI/Today/TodayView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "refreshLetterDay(refresh:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0027F306-4112-4DF0-9A9D-3DE0165DAEB2 - ea6123101c9b29d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CA.TodayViewModel.refreshLetterDay(refresh: Swift.Bool) async -&gt; ()"
+                  moduleName = "CA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harryliu/Desktop/ColumbusAcademyApp-main/Shared/UI/Today/TodayView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "0027F306-4112-4DF0-9A9D-3DE0165DAEB2 - ea6123101c9b29d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CA.TodayViewModel.refreshLetterDay(refresh: Swift.Bool) async -&gt; ()"
+                  moduleName = "CA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harryliu/Desktop/ColumbusAcademyApp-main/Shared/UI/Today/TodayView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "0027F306-4112-4DF0-9A9D-3DE0165DAEB2 - ea6123101c9b29d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CA.TodayViewModel.refreshLetterDay(refresh: Swift.Bool) async -&gt; ()"
+                  moduleName = "CA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harryliu/Desktop/ColumbusAcademyApp-main/Shared/UI/Today/TodayView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
